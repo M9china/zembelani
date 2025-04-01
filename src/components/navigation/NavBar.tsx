@@ -1,5 +1,5 @@
 "use client";
-import { ShoppingBagIcon } from "@heroicons/react/24/outline";
+import { RxMagnifyingGlass } from "react-icons/rx";
 import Link from "next/link";
 import Image from "next/image";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
@@ -16,6 +16,7 @@ export const NavBar = () => {
           transition
           className="fixed inset-0 bg-black bg-opacity-25 transition-opacity duration-300 ease-linear data-[closed]:opacity-0"
         />
+        
 
         <div className="fixed inset-0 z-40 flex">
           <DialogPanel
@@ -38,22 +39,6 @@ export const NavBar = () => {
 
             <div className="space-y-6 border-t border-gray-200 px-4 py-6">
               <div className="flow-root">
-                {/* {user ? (
-                  <Link
-                    href="/"
-                    // onClick={handleAuth}
-                    className="-m-2 block p-2 font-medium text-gray-700"
-                  >
-                    Sign Out
-                  </Link>
-                ) : (
-                  <Link
-                    href="/api/auth/signin"
-                    className="-m-2 block p-2 font-medium text-gray-700"
-                  >
-                    Sign in
-                  </Link>
-                )} */}
               </div>
               <div className="flow-root">
                 <Link
@@ -73,36 +58,20 @@ export const NavBar = () => {
             {/* Logo */}
             <div className=" flex space-x-4 items-center lg:ml-0">
               <Link href="/">
-                <span className="sr-only">L.A.B.H</span>
+                <span className="sr-only">Zembelani logo</span>
                 <Image
-                  alt="labh logo"
+                  alt="zembelani logo"
                   height={1500}
                   width={1500}
-                  src="/labh.jpeg"
-                  className="h-[3.5rem] w-auto rounded-full"
+                  src="/logo/zembelanilogo.PNG"
+                  className="h-[3rem] w-auto"
                 />
               </Link>
-              <h1 className="text-red-500 sm:block hidden text-2xl">L.A.B.H</h1>
+              <h1 className="text-red-500 sm:block hidden text-2xl">zembelani_logo</h1>
             </div>
 
             <div className="ml-auto flex items-center">
               <div className="hidden  lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                {/* {user ? (
-                  <Link
-                    href="/"
-                    // onClick={handleAuth}
-                    className="-m-2 block p-2 font-semibold text-black"
-                  >
-                    Sign Out
-                  </Link>
-                ) : (
-                  <Link
-                    href="/api/auth/signin"
-                    className="-m-2 block p-2 font-semibold text-black"
-                  >
-                    Sign in
-                  </Link>
-                )} */}
                 <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
                 <Link
                   href="/profile"
@@ -115,43 +84,14 @@ export const NavBar = () => {
               <div className="flex items-center space-x-4">
                 <div className="lg:ml-6 relative">
                   <Link href="/cart">
-                    <ShoppingBagIcon
+                    <RxMagnifyingGlass
                       aria-hidden="true"
-                      className="h-6 w-6 flex-shrink-0 text-black font-semibold group-hover:text-gray-500"
+                      className="h-7 w-7 flex-shrink-0 text-black font-semibold group-hover:text-gray-500"
                     />
-                    <span className="sr-only">items in cart, view bag</span>
+                    <span className="sr-only">search bar</span>
                   </Link>
                 </div>
 
-                {/* {data && data.cart?.count > 0 && (
-                  <div className="bg-blue-600 sm:mr-5 w-4 flex items-center justify-center h-4 -mt-5 ml-5 rounded-full absolute">
-                    <p className="text-sm">{data.cart?.count}</p>
-                  </div>
-                )} */}
-
-                {/* Cart */}
-                <div className=" lg:ml-6">
-                  <Link
-                    href="/wishlist"
-                    className=" text-black text-sm font-semibold"
-                  >
-                    <span className="sr-only">Wish list</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      className="h-6 w-6 font-semibold text-black"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
-                      />
-                    </svg>
-                  </Link>
-                </div>
                 <button
                   type="button"
                   onClick={() => setOpen(true)}
