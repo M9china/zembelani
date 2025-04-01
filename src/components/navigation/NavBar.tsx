@@ -64,7 +64,7 @@ export const NavBar = () => {
                   height={1500}
                   width={1500}
                   src="/logo/zembelanilogo.PNG"
-                  className="h-[3rem] w-auto"
+                  className="h-[2.5rem] w-auto"
                 />
               </Link>
               <h1 className="text-red-500 sm:block hidden text-2xl">zembelani_logo</h1>
