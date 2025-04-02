@@ -1,20 +1,21 @@
+import { IHero } from "./HeroDto";
 
-  export const slides = [
+  export const slides:IHero[] = [
     {
       src: "/hero/zembelani (8).jpeg",
-      alt: "Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee.",
+      id: 1,
       title: "New Arrivals",
       description: "Shop now",
     },
     {
       src: "/hero/zembelani (9).jpeg",
-      alt: "Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters.",
+      id: 2,
       title: "Best Selling",
       description: "Shop now",
     },
     {
       src: "/hero/zembelani (4).jpeg",
-      alt: "Walnut desk organizer set with white modular trays, next to porcelain mug on wooden desk.",
+      id: 3,
       title: "Head Wear",
       description: "Shop now",
     },
