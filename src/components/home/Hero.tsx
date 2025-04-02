@@ -28,23 +28,24 @@ export const Hero = () => {
         <div className="slider-container">
           <Slider {...settings}>
             {slides.map((value: IHero) => (
-              <span
-                key={value.id}
-                className="flex flex-col justify-center pb-2"
-              >
-                {value.id % 2 === 0 ? (
-                  <div className="relative flex justify-center bg-blue-500 h-[8rem] group"></div>
-                ) : (
-                  <div className="relative flex justify-center bg-red-500 h-[8rem] group"></div>
-                )}
-                <div className="relative flex justify-center">
+              <span key={value.id} className="pb-2">
+                <div className="flex justify-center items-center">
                   <Image
                     width={500}
                     height={500}
-                    className="object-cover object-center h-[13rem] group-hover:opacity-75"
+                    className="object-cover relative object-center h-[13.5 rem] group-hover:opacity-75"
                     src={value.src}
                     alt="avatar"
                   />
+                  {value.id % 2 === 0 ? (
+                    <span className="absolute flex items-center justify-center mt-[6rem] w-[16rem] bg-blue-500 h-[8rem]">
+                      <p className="text-center">{value.title}</p>
+                    </span>
+                  ) : (
+                    <span className="absolute flex items-center justify-center mt-[6rem] w-[16rem] bg-red-500 h-[8rem]">
+                      <p className='text-center'>{value.title}</p>
+                    </span>
+                  )}
                 </div>
               </span>
             ))}
