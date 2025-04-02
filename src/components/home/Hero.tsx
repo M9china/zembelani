@@ -1,112 +1,57 @@
-import Link from "next/link";
+"use client";
+import React from "react";
 import Image from "next/image";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { slides } from "./HeroData";
+import { IHero } from "./HeroDto";
 
 export const Hero = () => {
-  return (
-    <div className="bg-white sm:w-full w-screen overflow-hidden">
-      <div className="pb-80 pt-16 sm:pb-40  sm:pt-24 lg:pb-48 lg:pt-40 bg-white mt-5">
-        <div className="relative max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
-          <div className="sm:max-w-2xl">
-            <h1 className="text-4xl font-bold leading-[2.5rem] sm:leading-[3.5rem] text-gray-900 sm:text-6xl">
-              {`Zembelani Transport & Projects`}
-            </h1>
-            <p className="mt-4 text-xl text-gray-500">
-              {`This year, our new collection will shelter you from the harsh
-                elements of a world that doesn't care if you live or die.`}
-            </p>
-          </div>
-          <div className="">
-            <div className="mt-10">
-              {/* Decorative image grid */}
-              <div
-                aria-hidden="true"
-                className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
-              >
-                <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
-                  <div className="flex items-center space-x-6 lg:space-x-8">
-                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
-                        <Image
-                          width={1500}
-                          height={1500}
-                          alt=""
-                          src="/hero/zembelani (3).jpeg"
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <Image
-                          width={1500}
-                          height={1500}
-                          alt=""
-                          src="/hero/zembelani (2).jpeg"
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                    </div>
-                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <Image
-                          width={1500}
-                          height={1500}
-                          alt=""
-                          src="/hero/zembelani (4).jpeg"
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <Image
-                          width={1500}
-                          height={1500}
-                          alt=""
-                          src="/hero/zembelani (5).jpeg"
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <Image
-                          width={1500}
-                          height={1500}
-                          alt=""
-                          src="/hero/zembelani (7).jpeg"
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                    </div>
-                    <div className="sm:grid hidden flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <Image
-                          width={1500}
-                          height={1500}
-                          alt=""
-                          src="/hero/zembelani (8).jpeg"
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <Image
-                          width={1500}
-                          height={1500}
-                          alt=""
-                          src="/hero/zembelani (9).jpeg"
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    initialSlide: 0,
+    autoplaySpeed: 1500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
-              <Link
-                href="/collection"
-                className="inline-block rounded-md border border-transparent bg-[#1D3A74] px-8 py-3 text-center font-medium text-white hover:bg-gray-700"
-              >
-                Work With Us
-              </Link>
-            </div>
-          </div>
+  return (
+    <section
+      aria-labelledby="category-heading"
+      className="bg-white pt-[3.5rem] sm:hidden block"
+    >
+      <div className="mx-auto pb-24 sm:mt-[12rem] sm:px-6 sm:py-32 lg:px-8">
+        <div className="slider-container">
+          <Slider {...settings}>
+            {slides.map((value: IHero) => (
+              <span key={value.id} className="pb-2">
+                <div className="flex justify-center items-center">
+                  <Image
+                    width={500}
+                    height={500}
+                    className="object-cover relative object-center h-[13.5 rem] group-hover:opacity-75"
+                    src={value.src}
+                    alt="avatar"
+                  />
+                  {value.id % 2 === 0 ? (
+                    <span className="absolute flex items-center justify-center mt-[6rem] w-[16rem] bg-blue-500 h-[8rem]">
+                      <p className="text-center">{value.title}</p>
+                    </span>
+                  ) : (
+                    <span className="absolute flex items-center justify-center mt-[6rem] w-[16rem] bg-red-500 h-[8rem]">
+                      <p className='text-center'>{value.title}</p>
+                    </span>
+                  )}
+                </div>
+              </span>
+            ))}
+          </Slider>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
