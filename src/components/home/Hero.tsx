@@ -22,7 +22,7 @@ export const Hero = () => {
   return (
     <section
       aria-labelledby="category-heading"
-      className="bg-white pt-[3.5rem] sm:hidden block"
+      className="bg-white pt-[3.5rem] sm:hidden block min-h-screen"
     >
       <div className="mx-auto pb-24 sm:mt-[10rem] sm:px-6 sm:py-32 lg:px-8">
         <div className="slider-container">
@@ -33,7 +33,7 @@ export const Hero = () => {
                   <Image
                     width={500}
                     height={500}
-                    className="object-cover relative object-center h-[13.5rem] brightness-65"
+                    className="object-cover relative object-center h-full brightness-65"
                     src={value.src}
                     alt="avatar"
                   />
