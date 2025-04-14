@@ -11,7 +11,7 @@ export const Hero = () => {
   const settings = {
     // dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1500,
     autoplay: true,
     initialSlide: 0,
     autoplaySpeed: 1500,
@@ -38,13 +38,11 @@ export const Hero = () => {
                     alt="avatar"
                   />
                   {value.id % 2 === 0 ? (
-                    <span className="absolute flex items-center justify-center opacity-70 w-[16rem] ml-[8.5rem] h-[8rem]">
-                      <p className="text-center text-white text-2xl font-stretch-ultra-condensed">{value.title}</p>
-                    </span>
+                    
+                      <p className="absolute px-6 ml-[15.5rem] text-white text-2xl font-stretch-ultra-condensed">{value.title}</p>
+                    
                   ) : (
-                    <span className="absolute flex items-center justify-center opacity-70 w-[16rem] h-[8rem]">
-                      <p className='text-center text-white text-2xl font-stretch-ultra-condensed'>{value.title}</p>
-                    </span>
+                      <p className='absolute px-6 text-white text-2xl font-stretch-ultra-condensed'>{value.title}</p>
                   )}
                 </div>
               </span>

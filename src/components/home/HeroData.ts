@@ -4,19 +4,19 @@ import { IHero } from "./HeroDto";
     {
       src: "/hero/zembelani (8).jpeg",
       id: 1,
-      title: "New Arrivals",
+      title: "Sand & Stone for Sale",
       description: "Shop now",
     },
     {
       src: "/hero/zembelani (9).jpeg",
       id: 2,
-      title: "Best Selling",
+      title: "Plant Hire",
       description: "Shop now",
     },
     {
       src: "/hero/zembelani (4).jpeg",
       id: 3,
-      title: "Head Wear",
+      title: "Haulage & Logistics",
       description: "Shop now",
     }
   ]
