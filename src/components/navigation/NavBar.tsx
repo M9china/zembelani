@@ -86,7 +86,7 @@ export const NavBar = () => {
                   <Link href="/cart">
                     <RxMagnifyingGlass
                       aria-hidden="true"
-                      className="h-7 w-7 flex-shrink-0 text-black font-semibold group-hover:text-gray-500"
+                      className="h-7 w-7 flex-shrink-0 text-blue-900 font-semibold group-hover:text-gray-500"
                     />
                     <span className="sr-only">search bar</span>
                   </Link>
@@ -95,7 +95,7 @@ export const NavBar = () => {
                 <button
                   type="button"
                   onClick={() => setOpen(true)}
-                  className="relative block sm:hidden rounded-md bg-white  font-semibold text-black lg:hidden"
+                  className="relative block sm:hidden rounded-md bg-white  font-semibold text-blue-900 lg:hidden"
                 >
                   <span className="sr-only">Open menu</span>
                   <Bars3Icon aria-hidden="true" className="h-7 w-7" />

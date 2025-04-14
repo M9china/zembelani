@@ -18,6 +18,6 @@ import { IHero } from "./HeroDto";
       id: 3,
       title: "Head Wear",
       description: "Shop now",
-    },
+    }
   ]
   
