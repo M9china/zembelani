@@ -27,7 +27,7 @@ export const Hero = () => {
       className="bg-white pt-[3.5rem] sm:hidden block min-h-screen"
     >
       <div className="mx-auto pb-24 sm:mt-[10rem] sm:px-6 sm:py-32 lg:px-8">
-        <div className="slider-container overflow-hidden rounded-lg shadow-lg">
+        <div className="slider-container overflow-hidden">
           <Slider {...settings}>
             {slides.map((value: IHero) => (
               <div
