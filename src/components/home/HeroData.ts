@@ -18,6 +18,12 @@ import { IHero } from "./HeroDto";
       id: 3,
       title: "Haulage & Logistics",
       description: "Shop now",
+    },
+    {
+      src: "/hero/zembelani (5).jpeg",
+      id: 4,
+      title: "Waste Management",
+      description: "Shop now",
     }
   ]
   
