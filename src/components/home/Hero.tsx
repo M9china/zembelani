@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Slider from "react-slick";
+import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { slides } from "./HeroData";
@@ -9,14 +10,15 @@ import { IHero } from "./HeroDto";
 
 export const Hero = () => {
   const settings = {
-    // dots: true,
     infinite: true,
-    speed: 1500,
+    speed: 2000,
+    fade: true,
     autoplay: true,
-    initialSlide: 0,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    pauseOnHover: false,
+    arrows: false,
   };
 
   return (
@@ -25,27 +27,31 @@ export const Hero = () => {
       className="bg-white pt-[3.5rem] sm:hidden block min-h-screen"
     >
       <div className="mx-auto pb-24 sm:mt-[10rem] sm:px-6 sm:py-32 lg:px-8">
-        <div className="slider-container">
+        <div className="slider-container overflow-hidden rounded-lg shadow-lg">
           <Slider {...settings}>
             {slides.map((value: IHero) => (
-              <span key={value.id} className="pb-2">
-                <div className="flex items-center">
-                  <Image
-                    width={500}
-                    height={500}
-                    className="object-cover relative object-center h-full brightness-65"
-                    src={value.src}
-                    alt="avatar"
-                  />
-                  {value.id % 2 === 0 ? (
-                    
-                      <p className="absolute px-6 ml-[15.5rem] text-white text-2xl font-stretch-ultra-condensed">{value.title}</p>
-                    
-                  ) : (
-                      <p className='absolute px-6 text-white text-2xl font-stretch-ultra-condensed'>{value.title}</p>
-                  )}
-                </div>
-              </span>
+              <div
+                key={value.id}
+                className="relative h-[500px] w-full overflow-hidden"
+              >
+                <Image
+                  width={1920}
+                  height={1080}
+                  className="w-full h-full object-cover brightness-65 transition-transform duration-[4000ms] scale-105 hover:scale-110"
+                  src={value.src}
+                  alt="slide image"
+                />
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
+                  className={`absolute bottom-10 left-6 right-6 text-white text-3xl md:text-5xl font-extrabold tracking-tight ${
+                    value.id % 2 === 0 ? "text-right" : "text-left"
+                  }`}
+                >
+                  {value.title}
+                </motion.div>
+              </div>
             ))}
           </Slider>
         </div>
