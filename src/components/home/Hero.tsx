@@ -41,7 +41,7 @@ export const Hero = () => {
 
               const backgroundColor = isLeftText
                 ? "#001A4B" // left-aligned background
-                : "#c60000"; // right-aligned background
+                : "#b70000"; // right-aligned background
 
               return (
                 <div
@@ -64,7 +64,7 @@ export const Hero = () => {
                         : "right-[1rem] text-right w-5/8"
                     }`}
                   >
-                    <div className="relative inline-block px-4">
+                    <div className="relative inline-block px-4 py-1">
                       <AnimatePresence mode="wait">
                         {isActive && (
                           <>
