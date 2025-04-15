@@ -8,7 +8,7 @@ import { IHero } from "./HeroDto";
       description: "Work with us",
     },
     {
-      src: "/hero/zembelani (9).jpeg",
+      src: "/hero/zembelani (3).jpeg",
       id: 2,
       title: "Plant Service Hire",
       description: "Work with us",
