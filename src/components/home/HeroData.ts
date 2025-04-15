@@ -4,7 +4,7 @@ import { IHero } from "./HeroDto";
     {
       src: "/hero/zembelani (8).jpeg",
       id: 1,
-      title: "Sand & Stone for Sale",
+      title: "Sand & Stone For Sale",
       description: "Shop now",
     },
     {

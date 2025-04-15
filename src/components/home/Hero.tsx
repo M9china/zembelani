@@ -32,7 +32,7 @@ export const Hero = () => {
             {slides.map((value: IHero) => (
               <div
                 key={value.id}
-                className="relative h-[500px] w-full overflow-hidden"
+                className="relative h-[35rem] w-full overflow-hidden"
               >
                 <Image
                   width={1920}
@@ -45,8 +45,8 @@ export const Hero = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1.5, ease: "easeOut" }}
-                  className={`absolute bottom-10 left-6 right-6 text-white text-3xl md:text-5xl font-extrabold tracking-tight ${
-                    value.id % 2 === 0 ? "text-right" : "text-left"
+                  className={`absolute bottom-16 text-white text-3xl md:text-5xl font-extrabold tracking-tight ${
+                    value.id % 2 === 0 ? "text-right w-1/2 right-[1rem] border border-red-300" : "left-4 text-left w-1/2 border border-amber-300"
                   }`}
                 >
                   {value.title}
