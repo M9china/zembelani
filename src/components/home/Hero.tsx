@@ -32,7 +32,7 @@ export const Hero = () => {
             {slides.map((value: IHero) => (
               <div
                 key={value.id}
-                className="relative h-[35rem] w-full overflow-hidden"
+                className="relative h-[40rem] w-full overflow-hidden"
               >
                 <Image
                   width={1920}
