@@ -81,7 +81,7 @@ export const Hero = () => {
                                 opacity: 0,
                               }}
                               transition={{ duration: 1.5, ease: "easeInOut" }}
-                              className="absolute inset-0 z-[-1]"
+                              className="absolute inset-0 z-[-1] rounded-sm"
                               style={{ backgroundColor }}
                             />
 
