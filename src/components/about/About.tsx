@@ -8,7 +8,7 @@ export const About = () => {
       aria-labelledby="about-us-section"
       className="bg-white min-h-screen block sm:hidden"
     >
-      <p className="text-gray-600 px-4 pt-6 font-sans text-md justify-items-center">
+      <p className="text-gray-600 px-4 pt-5 font-sans text-md justify-items-center">
         {AboutUs.wwa}
       </p>
       <h1 className="text-[#001A4B] px-4 font-semibold text-3xl mt-6">WHAT WE DO</h1>
