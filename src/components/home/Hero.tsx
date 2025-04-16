@@ -32,7 +32,7 @@ export const Hero = () => {
       aria-labelledby="category-heading"
       className="bg-white pt-[3.5rem] sm:hidden block min-h-screen"
     >
-      <div className="mx-auto pb-24 sm:mt-[10rem] sm:px-6 sm:py-32 lg:px-8">
+      <div className="mx-auto sm:mt-[10rem] sm:px-6 sm:py-32 lg:px-8">
         <div className="slider-container overflow-hidden">
           <Slider {...settings}>
             {slides.map((value: IHero, index: number) => {
@@ -41,7 +41,7 @@ export const Hero = () => {
 
               const backgroundColor = isLeftText
                 ? "#001A4B" // left-aligned background
-                : "#b70000"; // right-aligned background
+                : "#9b0000"; // right-aligned background
 
               return (
                 <div
@@ -64,7 +64,7 @@ export const Hero = () => {
                         : "right-[1rem] text-right w-5/8"
                     }`}
                   >
-                    <div className="relative inline-block px-4 py-1">
+                    <div className="relative inline-block px-4 py-1 text-center">
                       <AnimatePresence mode="wait">
                         {isActive && (
                           <>
@@ -81,7 +81,7 @@ export const Hero = () => {
                                 opacity: 0,
                               }}
                               transition={{ duration: 1.5, ease: "easeInOut" }}
-                              className="absolute inset-0 z-[-1] rounded-sm"
+                              className="absolute inset-0 z-[-1] rounded-xs opacity-75"
                               style={{ backgroundColor }}
                             />
 
