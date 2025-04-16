@@ -1,0 +1,20 @@
+import { IAbout } from "./AboutDto";
+
+export const AboutUs: IAbout = {
+  wwa: `Zembelani Transport & Projects was established in 2005. The Company operates mainly in Transportation, 
+    Plant Hire, Civil and Building Construction. 
+    Currently we employ 150 employees across all our services sectors on a permanent basis.
+    `,
+  wwd: `We are a leading Transport and Construction Company, Over the past years our
+     company has managed to build reputation in Transportation and Construction sector.`,
+  display: [
+    {
+      image: "/hero/zembelani (3).jpeg",
+      description: `we're the best 1`,
+    },
+    {
+      image: "/hero/zembelani (2).jpeg",
+      description: `we're the best 2`,
+    },
+  ],
+};
