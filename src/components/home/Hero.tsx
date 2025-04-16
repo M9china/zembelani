@@ -80,8 +80,8 @@ export const Hero = () => {
                                 x: isLeftText ? "100%" : "-100%",
                                 opacity: 0,
                               }}
-                              transition={{ duration: 1.5, ease: "easeInOut" }}
-                              className="absolute inset-0 z-[-1] rounded-xs opacity-75"
+                              transition={{ duration: 1.2, ease: "easeInOut" }}
+                              className="absolute inset-0 z-[-1] rounded-xs "
                               style={{ backgroundColor }}
                             />
 
@@ -101,7 +101,7 @@ export const Hero = () => {
                                 opacity: 0,
                               }}
                               transition={{
-                                duration: 1.2,
+                                duration: 1.5,
                                 ease: "easeOut",
                               }}
                             >
