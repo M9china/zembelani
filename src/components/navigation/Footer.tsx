@@ -47,6 +47,11 @@ export const Footer = () => {
           <Link href="tel: +27 72691 9803">Alt Phone: +27 72691 9803</Link>
         </div>
       </div>
+      <div className="border-t border-gray-100 py-8 text-center">
+          <p className="text-sm text-gray-500">
+            &copy; 2025 Zembelani Transport & Projects, Inc. All rights reserved.
+          </p>
+        </div>
     </footer>
   );
 };
