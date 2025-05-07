@@ -10,11 +10,11 @@ export const AboutUs: IAbout = {
   display: [
     {
       image: "/hero/zembelani (3).jpeg",
-      description: `we're the best 1`,
+      description: `Roads & Earthworks`,
     },
     {
       image: "/hero/zembelani (2).jpeg",
-      description: `we're the best 2`,
+      description: `Building Materials`,
     },
   ],
 };
