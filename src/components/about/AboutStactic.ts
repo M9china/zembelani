@@ -10,11 +10,11 @@ export const AboutUs: IAbout = {
   display: [
       {
       image: "/projects/bridges.jpg",
-      description: `BRIDGES & CIVIL WORKS`,
+      description: `STORMWATER DRAINAGE`,
     },
     {
       image: '/projects/pipes.jpg',
-      description: `PIPELINE CONSTRUCTION`,
+      description: ` WATER PIPELINE CONSTRUCTION`,
     },
     {
       image: "/projects/plant.jpg",
