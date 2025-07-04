@@ -2,7 +2,7 @@ import { About, Footer, Hero, NavBar } from "@/components";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="h-sreen">
       <section>
         <NavBar />
       </section>

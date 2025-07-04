@@ -8,13 +8,23 @@ export const AboutUs: IAbout = {
   wwd: `We are a leading Transport and Construction Company, Over the past years our
      company has managed to build reputation in Transportation and Construction sector.`,
   display: [
-    {
-      image: "/hero/zembelani (3).jpeg",
-      description: `Roads & Earthworks`,
+      {
+      image: "/projects/bridges.jpg",
+      description: `BRIDGES & CIVIL WORKS`,
     },
     {
-      image: "/hero/zembelani (2).jpeg",
-      description: `Building Materials`,
+      image: '/projects/pipes.jpg',
+      description: `PIPELINE CONSTRUCTION`,
     },
+    {
+      image: "/projects/plant.jpg",
+      description: `PLANT HIRE SERVICES`,
+    },
+    {
+      image: '/projects/water.jpg',
+      description: `WATER & SANITATION`,
+    }
+
+
   ],
 };
