@@ -20,25 +20,25 @@ export const About = () => {
           {AboutUs.wwd}
         </p>
       </section>
-     <div className="relative mt-8">
-       <Image
-        className="rounded-xs px-4 w-full object-cover h-auto mt-4"
-        alt="machinery"
-        width={1920}
-        height={1080}
-        src="/projects/tar.jpg"
-      />
-      <div className="absolute bottom-4 px-4 ">
-        <h1 className="text-white font-semibold text-3xl px-4">
-          ROADS & EARTHWORKS
-        </h1>
+      <div className="relative mt-8">
+        <Image
+          className="rounded-xs px-4 w-full object-cover h-auto mt-4"
+          alt="machinery"
+          width={1920}
+          height={1080}
+          src="/projects/plant.jpg"
+        />
+        <div className="absolute bottom-4 px-4 ">
+          <h1 className="text-white font-semibold text-3xl px-4">
+            PLANT HIRE SERVICES
+          </h1>
+        </div>
       </div>
-     </div>
-      <div className="bg-[#001A4B] mt-[10rem]">
+      <div className="bg-[#001A4B] mt-[10rem] relative">
         {AboutUs.display.map((items: IAU) => (
           <div
             key={items.description}
-            className="relative py-2 -top-[9.5rem] px-4"
+            className="relative py-2 -top-[9rem] px-4 "
           >
             <Image
               className="rounded-xs w-full object-cover h-auto brightness-90"
@@ -52,6 +52,11 @@ export const About = () => {
             </p>
           </div>
         ))}
+        <div className="bottom-10 absolute">
+          <h1 className="text-white font-semibold text-3xl px-4">
+            COMPANY VALUES
+          </h1>
+        </div>
       </div>
     </main>
   );

@@ -17,8 +17,8 @@ export const AboutUs: IAbout = {
       description: ` WATER PIPELINE CONSTRUCTION`,
     },
     {
-      image: "/projects/plant.jpg",
-      description: `PLANT HIRE SERVICES`,
+      image: "/projects/tar.jpg",
+      description: `ROADS & EARTHWORKS `,
     },
     {
       image: '/projects/water.jpg',
