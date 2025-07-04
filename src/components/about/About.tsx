@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <main
       aria-labelledby="about-us-section"
-      className="bg-white min-h-screen pt-4 block sm:hidden"
+      className="bg-white min-h-screen block sm:hidden"
     >
       <p className="text-gray-600 px-4 font-sans text-md justify-items-center">
         {AboutUs.wwa}
@@ -15,7 +15,7 @@ export const About = () => {
         WHAT WE DO
       </h1>
       <section className=" flex space-x-4 px-4 items-center mt-5">
-        <div className="bg-[#9b0000] w-4 border border-[#9b0000] h-[9.5rem]"></div>
+        <div className="bg-[#9b0000] w-4 border border-[#9b0000] h-[7.5rem]"></div>
         <p className="text-gray-600 font-sans text-lg justify-items-center">
           {AboutUs.wwd}
         </p>

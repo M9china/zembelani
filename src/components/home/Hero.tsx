@@ -32,7 +32,7 @@ export const Hero = () => {
       aria-labelledby="category-heading"
       className="bg-white pt-[3.5rem] sm:hidden block min-h-screen"
     >
-      <div className="mx-auto sm:mt-[10rem] sm:px-6 sm:py-32 lg:px-8">
+      <div className="mx-auto sm:mt-[10rem] sm:px-6 lg:px-8">
         <div className="slider-container overflow-hidden">
           <Slider {...settings}>
             {slides.map((value: IHero, index: number) => {
