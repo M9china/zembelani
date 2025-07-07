@@ -23,7 +23,7 @@ export const About = () => {
       </section>
       <div className="relative mt-8">
         <Image
-          className="rounded-xs px-4 w-full object-cover h-auto mt-4"
+          className="rounded-xs px-4 brightness-50 w-full object-cover h-auto mt-4"
           alt="machinery"
           width={1920}
           height={1080}
@@ -39,7 +39,7 @@ export const About = () => {
         {AboutUs.display.map((items: IAU) => (
           <div key={items.description} className="py-2 relative px-4">
             <Image
-              className="w-full object-cover h-auto brightness-90"
+              className="w-full object-cover h-auto brightness-50"
               alt="machinery"
               width={1920}
               height={1080}
