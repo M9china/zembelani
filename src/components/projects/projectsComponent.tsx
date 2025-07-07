@@ -1,4 +1,4 @@
-export const peojetsComponent = () => {
+export const projetsComponent = () => {
 
     return (
         <main className=''>
