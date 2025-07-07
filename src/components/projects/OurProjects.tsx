@@ -24,7 +24,7 @@ export const ProjectsComponent = () => {
     <main className="">
       <div className="relative">
         <Image
-          className=" w-full object-cover h-auto"
+          className=" w-full brightness-50 object-cover h-auto"
           alt={project.title}
           width={1920}
           height={1080}
@@ -39,24 +39,24 @@ export const ProjectsComponent = () => {
         <div className="absolute px-4 bottom-8">
             <Link
               href={project.projectUrl}
-              className="text-white font-semibold text-md"
+              className="text-white font-semibold text-lg"
             >
               VIEW PROJECT
             </Link>
-            <div className="w-full mt-16 flex space-x-4">
+            <div className="w-full mt-10 flex space-x-4">
               <button
                 aria-label="Previous Project"
                 onClick={goToPrevious}
-                className="rounded-full p-1 border border-white hover:bg-black/70"
+                className="rounded-full p-2 border border-white hover:bg-black/70"
               >
-                <ChevronLeftIcon className="h-4 w-4" />
+                <ChevronLeftIcon className="h-6 w-6" />
               </button>
               <button
                 aria-label="Next Project"
                 onClick={goToNext}
-                className="p-1 border border-white rounded-full text-white hover:bg-black/70"
+                className="p-2 border border-white rounded-full text-white hover:bg-black/70"
               >
-                <ChevronRightIcon className="h-4 w-4" />
+                <ChevronRightIcon className="h-6 w-6" />
               </button>
             </div>
           </div>
