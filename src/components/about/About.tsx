@@ -15,7 +15,7 @@ export const About = () => {
         WHAT WE DO
       </h1>
       <section className=" flex space-x-4 px-4 items-center mt-5">
-        <div className="bg-[#9b0000] w-4 border border-[#9b0000] h-[7.5rem]"></div>
+        <div className="bg-[#e75152] w-4 border border-[#e75152] h-[7.5rem]"></div>
         <p className="text-gray-600 font-sans text-lg justify-items-center">
           {AboutUs.wwd}
         </p>
@@ -34,14 +34,11 @@ export const About = () => {
           </h1>
         </div>
       </div>
-      <div className="bg-[#001A4B] mt-[10rem] relative">
+      <div className="bg-[#001A4B] relative pt-[2rem] mt-[2rem]">
         {AboutUs.display.map((items: IAU) => (
-          <div
-            key={items.description}
-            className="relative py-2 -top-[9rem] px-4 "
-          >
+          <div key={items.description} className="py-2 relative px-4">
             <Image
-              className="rounded-xs w-full object-cover h-auto brightness-90"
+              className="w-full object-cover h-auto brightness-90"
               alt="machinery"
               width={1920}
               height={1080}
@@ -52,10 +49,20 @@ export const About = () => {
             </p>
           </div>
         ))}
-        <div className="bottom-10 absolute">
+        <div className="mt-12">
           <h1 className="text-white font-semibold text-3xl px-4">
             COMPANY VALUES
           </h1>
+        </div>
+        <div className="text-white font-sans text-lg px-8 py-4">
+          <p>- Professionalism</p>
+          <p>- Integrity</p>
+          <p>- Reliability</p>
+          <p>- Quality Service</p>
+          <p>- Credibility</p>
+          <p>- Accountability</p>
+          <p>- Compatitiveness</p>
+          <p>- Efficiency</p>
         </div>
       </div>
     </main>
