@@ -9,6 +9,7 @@ export default function ContactUsPage() {
           For inquiries, please reach out to us via the contact form below.
         </p>
       </div>
+      <h1 className="text-2xl mt-6 px-4 font-bold text-gray-600">SECTION IS UNDER DEVELOPMENT!!!</h1>
     </main>
   );
 }

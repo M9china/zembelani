@@ -11,6 +11,7 @@ export default function AboutUsPage() {
           Currently we employ 150 employees across all our services sectors on a permanent basis.
         </p>
       </div>
+      <h1 className="text-2xl mt-6 px-4 font-bold text-gray-600">SECTION IS UNDER DEVELOPMENT!!!</h1>
     </main>
   );
 }
