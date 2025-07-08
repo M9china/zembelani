@@ -13,7 +13,7 @@ export const AboutUs: IAbout = {
       description: `STORMWATER DRAINAGE`,
     },
     {
-      image: '/projects/pipes.png',
+      image: '/projects/pipes.jpg',
       description: ` WATER PIPELINE CONSTRUCTION`,
     },
     {
