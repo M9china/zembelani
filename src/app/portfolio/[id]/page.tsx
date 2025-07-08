@@ -17,7 +17,7 @@ export default async function ProjectDetailPage({
   return (
     <main className="min-h-screen pt-[4rem] bg-white">
       <div className="relative">
-        {project?.imageUrl.map((image, index) => (
+        {project?.imageUrl.slice(1).map((image, index) => (
           <Image
             key={index}
             className="w-full h-auto brightness-40 mb-8 object-cover"
