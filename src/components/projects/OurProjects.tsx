@@ -38,7 +38,7 @@ export const ProjectsComponent = () => {
         </div>
         <div className="absolute px-4 bottom-8">
             <Link
-              href={project.projectUrl}
+              href={`portfolio/${project.id}`}
               className="text-white font-semibold text-lg"
             >
               VIEW PROJECT

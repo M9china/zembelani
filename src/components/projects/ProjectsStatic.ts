@@ -18,14 +18,14 @@ export const ProjectsStatic: Project[] = [
     id: 2,
     title: "Project Two",
     description: "This is the second project.",
-    imageUrl: "/images/project2.jpg",
+    imageUrl: "/projects/drainage.png",
     projectUrl: "",
   },
   {
     id: 3,
     title: "Project Three",
     description: "This is the third project.",
-    imageUrl: "/images/project3.jpg",
+    imageUrl: "/projects/pressure_pump.png",
     projectUrl: "",
   }
 ];
