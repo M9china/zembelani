@@ -33,7 +33,7 @@ export const ProjectsComponent = () => {
       <div className="relative">
         <Image
             className={`w-full brightness-50 object-cover h-auto
-               transition-transform duration-1000 ease-in-out ${zoom ? "scale-110" : "scale-100"}`}
+               transition-transform duration-1000 ease-in-out ${zoom ? "scale-x-50 scale-50 bg-[#001A4B]" : "scale-100"}`}
           alt={project.title}
           width={1920}
           height={1080}
