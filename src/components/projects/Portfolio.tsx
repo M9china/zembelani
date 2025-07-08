@@ -22,13 +22,13 @@ export const Portfolio = () => {
       </div>
       <div className="mt-16 ">
         {ProjectsStatic.map((project, id) => (
-          <div className="mx-4 mb-12 rounded-2xl shadow-lg shadow-[#001A4B]" key={id}>
+          <div className="mx-4 mb-12 rounded-2xl object-contain shadow-lg shadow-[#001A4B]" key={id}>
             <Link
               href={`/portfolio/${project.id}`}
-              className="shadow-2xl shadow-gray-300 "
+              className="shadow-2xl shadow-gray-300  "
             >
               <Image
-                className="w-full h-[11rem] rounded-t-2xl object-contain"
+                className=" h-[11.5rem] rounded-t-2xl aspect-[4/3] aspect-h-[3] aspect-w-[4]"
                 alt={project.title}
                 width={1920}
                 height={1080}
