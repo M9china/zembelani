@@ -14,7 +14,7 @@ export const ProjectsComponent = () => {
 
   const triggerZoom = () => {
   setZoom(true);
-  setTimeout(() => setZoom(false), 500);
+  setTimeout(() => setZoom(false), 1000);
 };
 
 
@@ -33,7 +33,7 @@ export const ProjectsComponent = () => {
       <div className="relative">
         <Image
             className={`w-full brightness-50 object-cover h-auto
-               transition-transform duration-500 ease-in-out ${zoom ? "scale-110" : "scale-100"}`}
+               transition-transform duration-1000 ease-in-out ${zoom ? "scale-110" : "scale-100"}`}
           alt={project.title}
           width={1920}
           height={1080}
