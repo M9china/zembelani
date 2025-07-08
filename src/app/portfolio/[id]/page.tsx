@@ -20,7 +20,7 @@ export default async function ProjectDetailPage({
         {project?.imageUrl.slice(1).map((image, index) => (
           <Image
             key={index}
-            className="w-full h-auto brightness-40 mb-8 object-cover"
+            className={`${index > 0 && 'px-4 h-[18rem] aspect-[4/3] object-contain brightness-90'} w-full brightness-50 mb-8 object-cover`}
             alt={project.title}
             width={1920}
             height={1080}
@@ -31,7 +31,7 @@ export default async function ProjectDetailPage({
           {project?.title}
         </h1>
       </div>
-      <p className="text-gray-800 text-lg">{project?.description}</p>
+      <p className="text-gray-900 px-4 pb-[4rem] text-lg">{project?.longDescription}</p>
     </main>
   );
 }
