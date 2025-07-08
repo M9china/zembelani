@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ProjectsComponent } from "../projects";
 import { IAU } from "./AboutDto";
 import { AboutUs } from "./AboutStactic";
@@ -22,6 +23,7 @@ export const About = () => {
         </p>
       </section>
       <div className="relative mt-8">
+        <Link href={'portfolio/0'}></Link>
         <Image
           className="rounded-xs px-4 brightness-50 w-full object-cover h-auto mt-4"
           alt="machinery"

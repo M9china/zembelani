@@ -5,12 +5,12 @@ import { ProjectsStatic } from "./ProjectsStatic";
 export const Portfolio = () => {
 
     return (
-        <main className="bg-gray-50 min-h-screen py-[5rem]">
+        <main className="bg-white min-h-screen py-[7rem]">
       <h1 className="text-4xl gap-2 px-4 font-bold text-[#001A4B] mb-8">
         Our <br/>Projects
       </h1>
       <div className="px-8 space-y-4">
-        <p className="text-gray-900 text-lg">
+        <p className="text-gray-900 text-xl font-sans">
           Below is a selection of projects we have worked on:
         </p>
         <Link
@@ -20,9 +20,9 @@ export const Portfolio = () => {
           CONTACT US NOW
         </Link>
       </div>
-      <div className="mt-16">
+      <div className="mt-16 ">
         {ProjectsStatic.map((project, id) => (
-          <div className="mx-8 mb-12 shadow-2xl shadow-[#001A4B]" key={id}>
+          <div className="mx-4 mb-12 rounded-2xl shadow-2xl shadow-[#001A4B]" key={id}>
             <Link
               href={`/portfolio/${project.id}`}
               className="shadow-2xl shadow-gray-300 "
@@ -34,7 +34,7 @@ export const Portfolio = () => {
                 height={1080}
                 src={project.imageUrl[0]}
               />
-              <p className="text-white bg-[#001A4B] font-bold py-6 px-4 text-2xl">
+              <p className="text-white bg-[#001A4B] rounded-b-2xl font-bold py-6 px-4 text-2xl">
                 {" "}
                 {project.description}
               </p>
