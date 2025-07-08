@@ -10,7 +10,7 @@ export const ProjectsStatic: Project[] = [
     id: 1,
     title: "R54 ROADWORK",
     description: "PORTHOLE PATCHING & ROADWORKS",
-    imageUrl: ["/projects/roadwork.png", '/projects/roadwork.png'],
+    imageUrl: ["/projects/roadwork.png", '/projects/road.jpg', '/projects/road2.jpg','/projects/road3.jpg','/projects/road4.jpg', '/projects/road5.jpg'],
   },
   {
     id: 2,

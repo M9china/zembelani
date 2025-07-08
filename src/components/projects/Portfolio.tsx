@@ -28,7 +28,7 @@ export const Portfolio = () => {
               className="shadow-2xl shadow-gray-300 "
             >
               <Image
-                className="w-full h-[11rem] rounded-t-2xl object-cover"
+                className="w-full h-[11rem] rounded-t-2xl object-contain"
                 alt={project.title}
                 width={1920}
                 height={1080}
