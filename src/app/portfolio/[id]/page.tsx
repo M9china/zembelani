@@ -19,13 +19,16 @@ export default async function ProjectDetailPage({
       <h1 className="text-3xl font-bold text-[#001A4B] mb-6">
         {project?.title}
       </h1>
-      <Image
-      src={project?.imageUrl || "/projects/default.png"}
-        alt={project?.title || "Project Image"}
-        width={1200}
-        height={600}
-        className="w-full h-[20rem] object-cover rounded-2xl mb-4"
-      />
+      {project?.imageUrl.map((image, index) => (
+        <Image
+          key={index}
+          className="w-full h-auto mb-8 object-cover"
+          alt={project.title}
+          width={1920}
+          height={1080}
+          src={image}
+        />
+      ))}
       <p className="text-gray-800 text-lg">{project?.description}</p>
     </main>
   );

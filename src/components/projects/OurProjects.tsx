@@ -28,7 +28,7 @@ export const ProjectsComponent = () => {
           alt={project.title}
           width={1920}
           height={1080}
-          src={project.imageUrl}
+          src={project.imageUrl[0] || "/projects/default.png"}
         />
         <div className="absolute top-28 p-4 rounded w-1/2">
           <h1 className="text-white leading-16 font-bold text-5xl">

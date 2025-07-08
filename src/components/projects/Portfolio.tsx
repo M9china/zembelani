@@ -32,7 +32,7 @@ export const Portfolio = () => {
                 alt={project.title}
                 width={1920}
                 height={1080}
-                src={project.imageUrl}
+                src={project.imageUrl[0]}
               />
               <p className="text-white bg-[#001A4B] font-bold py-6 px-4 text-2xl">
                 {" "}
