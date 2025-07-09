@@ -92,7 +92,7 @@ export const NavBar = () => {
         {/* Nav */}
         <nav
           aria-label="Top"
-          className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8"
+          className="mx-auto max-w-8xl sm:px-6 lg:px-8"
         >
           <div className="flex h-16 items-center">
             {/* Logo */}
@@ -102,8 +102,8 @@ export const NavBar = () => {
                   alt="zembelani logo"
                   height={1500}
                   width={1500}
-                  src="/logo/zembelanilogo.PNG"
-                  className="h-[2.5rem] w-auto"
+                  src="/logo/logo_fav001.png"
+                  className="h-[4.5rem] w-auto"
                 />
               </Link>
               <h1 className="text-red-500 sm:block hidden text-2xl">
@@ -111,7 +111,7 @@ export const NavBar = () => {
               </h1>
             </div>
 
-            <div className="ml-auto flex items-center">
+            <div className="ml-auto mr-4 flex items-center">
               <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                 <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
                 <Link

@@ -8,6 +8,10 @@ export const NavStatic: INavStatic[] = [
     href: "/about-us",
   },
   {
+    title: "Services",
+    href: "/services",
+  },
+  {
     title: "Projects",
     href: "/portfolio",
   },
