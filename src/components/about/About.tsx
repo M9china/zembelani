@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ProjectsComponent } from "../projects";
 import { IAU } from "./AboutDto";
 import { AboutUs } from "./AboutStactic";
 import Image from "next/image";
@@ -68,7 +67,6 @@ export const About = () => {
           <p>- Efficiency</p>
         </div>
       </div>
-      <ProjectsComponent />
     </main>
   );
 };

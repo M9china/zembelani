@@ -6,7 +6,7 @@ import { ProjectsStatic } from "./ProjectsStatic";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-export const ProjectsComponent = () => {
+export const OurProjects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalSlides = ProjectsStatic.length;
   const [zoom, setZoom] = useState(false);
@@ -29,11 +29,11 @@ export const ProjectsComponent = () => {
   const project = ProjectsStatic[currentIndex];
 
   return (
-    <main className="">
+    <main className="bg-[#001A4B]">
       <div className="relative">
         <Image
             className={`w-full brightness-50 object-cover h-auto
-               transition-transform duration-1000 ease-in-out ${zoom ? "scale-x-50 scale-50 bg-[#001A4B]" : "scale-100"}`}
+               transition-transform duration-1000 ease-in-out ${zoom ? "scale-x-50 scale-50" : "scale-100"}`}
           alt={project.title}
           width={1920}
           height={1080}
