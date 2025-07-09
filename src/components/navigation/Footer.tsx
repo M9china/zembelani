@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer aria-labelledby="footer" className="bg-white pt-8">
+    <footer aria-labelledby="footer" className="bg-white pt-8 border-t border-gray-500">
       <div className="container grid-cols-2 grid sm:grid-cols-3 sm:space-x-6 space-x-2">
         <div className="text-[#001A4B] px-4">
           <h1 className="font-bold text-md sm:text-xl">
