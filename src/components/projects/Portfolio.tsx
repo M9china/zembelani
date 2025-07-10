@@ -9,12 +9,12 @@ export const Portfolio = () => {
       <h1 className="text-4xl gap-2 px-4 font-bold text-[#001A4B] mb-8">
         Our <br/>Projects
       </h1>
-      <div className="px-8 space-y-4">
+      <div className="px-8 ml-4 border-l-4 border-[#9b0000] space-y-4">
         <p className="text-gray-900 text-xl font-sans">
           Below is a selection of projects we have worked on:
         </p>
         <Link
-          className="text-white bg-blue-900 text-xs font-bold py-3 px-4 rounded"
+          className="text-white bg-[#001A4B] text-xs font-bold py-3 px-4 rounded"
           href="/contact-us"
         >
           CONTACT US NOW
@@ -22,7 +22,7 @@ export const Portfolio = () => {
       </div>
       <div className="mt-16 ">
         {ProjectsStatic.map((project, id) => (
-          <div className="mx-4 mb-12 rounded-lg shadow-lg shadow-[#001A4B]" key={id}>
+          <div className="mx-4 mb-12 rounded-lg shadow-sm shadow-[#001A4B]" key={id}>
             <Link
               href={`/portfolio/${project.id}`}
               className="shadow-2xl shadow-gray-300  "
