@@ -40,13 +40,13 @@ export const About = () => {
         {AboutUs.display.map((items: IAU) => (
           <div key={items.description} className="py-2 relative px-4">
             <Image
-              className="w-full object-contain[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] h-auto"
+              className="w-full object-contain h-auto"
               alt="machinery"
               width={1920}
               height={1080}
               src={items.image}
             />
-            <p className="text-white font-semibold px-4 break-words whitespace-normal text-3xl absolute bottom-10">
+            <p className="text-white font-semibold px-4 text-3xl absolute bottom-10">
               {items.description}
             </p>
           </div>

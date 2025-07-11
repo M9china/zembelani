@@ -14,7 +14,7 @@ export const AboutUs: IAbout = {
     },
     {
       image: "/projects/tar.jpg",
-      description: `EARTHWORKS & ROADS `,
+      description: `ROADS & EARTHWORKS`,
     },
         {
       image: '/projects/busses.jpg',
