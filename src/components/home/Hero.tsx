@@ -46,12 +46,12 @@ export const Hero = () => {
               return (
                 <div
                   key={value.id}
-                  className="relative h-[40rem] w-full overflow-hidden"
+                  className="relative w-full overflow-hidden"
                 >
                   <Image
                     width={1920}
                     height={1080}
-                    className="w-full h-full object-cover brightness-65 transition-transform duration-[4000ms] scale-105 hover:scale-110"
+                    className="w-full h-[40rem] sm:h-full object-cover brightness-65 transition-transform duration-[4000ms] scale-105 hover:scale-110"
                     src={value.src}
                     alt="slide image"
                   />
