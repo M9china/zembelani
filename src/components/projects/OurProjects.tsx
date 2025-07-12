@@ -32,23 +32,23 @@ export const OurProjects = () => {
     <main className="bg-[#001A4B]">
       <div className="relative">
         <Image
-            className={`w-full brightness-70 object-cover h-auto
+            className={`w-full brightness-70 object-cover h-auto sm:h-screen
                transition-transform duration-1000 ease-in-out ${zoom ? "scale-x-50 scale-50" : "scale-100"}`}
           alt={project.title}
           width={1920}
           height={1080}
           src={project.imageUrl[1] || "/projects/default.png"}
         />
-        <div className="absolute top-28 p-4 rounded w-1/2">
+        <div className="absolute sm:top- top-28 p-4 sm:px-[4rem] rounded sm:text-9xl w-1/2">
           <h1 className="text-white leading-16 font-bold text-5xl">
             {project.description}
           </h1>
           
         </div>
-        <div className="absolute px-4 bottom-8">
+        <div className="absolute sm:px-[4rem]  px-4 bottom-8">
             <Link
               href={`portfolio/${project.id}`}
-              className="text-white font-semibold text-lg"
+              className="text-white font-semibold sm:text-4xl text-lg"
             >
               VIEW PROJECT
             </Link>
