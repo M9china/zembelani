@@ -17,12 +17,12 @@ export const AboutUs: IAbout = {
       description: `ROADS & EARTHWORKS`,
     },
         {
-      image: '/projects/busses.jpg',
+      image: '/projects/sand.jpg',
       description: ` TRANSPORTATION SERVICES`,
     },
     {
-      image: '/projects/water.jpg',
-      description: `WATER & SANITATION`,
+      image: '/projects/pump03.jpg',
+      description: `PRESSURE-PUMPS INSTALLATION`,
     }
 
 
