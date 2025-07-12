@@ -30,9 +30,9 @@ export const Hero = () => {
   return (
     <section
       aria-labelledby="category-heading"
-      className="bg-white pt-[3.5rem] sm:hidden block min-h-screen"
+      className="bg-white pt-[3.5rem] min-h-screen"
     >
-      <div className="mx-auto sm:mt-[10rem] sm:px-6 lg:px-8">
+      <div className="mx-auto">
         <div className="slider-container overflow-hidden">
           <Slider {...settings}>
             {slides.map((value: IHero, index: number) => {
@@ -58,13 +58,13 @@ export const Hero = () => {
 
                   {/* Description + Background */}
                   <div
-                    className={`absolute bottom-16 text-white text-3xl md:text-5xl font-extrabold tracking-tight z-10 ${
+                    className={`absolute sm:bottom-[16rem] bottom-16 text-white text-3xl md:text-5xl font-extrabold tracking-tight z-10 ${
                       isLeftText
                         ? "left-4 text-left w-5/8"
                         : "right-[1rem] text-right w-5/8"
                     }`}
                   >
-                    <div className="relative inline-block px-4 py-1 text-center">
+                    <div className="relative inline-block sm:py-2 px-4 py-1 text-center">
                       <AnimatePresence mode="wait">
                         {isActive && (
                           <>
