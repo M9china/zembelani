@@ -90,10 +90,7 @@ export const NavBar = () => {
         </Dialog>
 
         {/* Nav */}
-        <nav
-          aria-label="Top"
-          className="mx-auto max-w-8xl sm:px-6 lg:px-8"
-        >
+        <nav aria-label="Top" className="mx-auto max-w-8xl sm:px-6 lg:px-8">
           <div className="flex h-16 items-center">
             {/* Logo */}
             <div className="flex space-x-4 items-center lg:ml-0">
@@ -103,26 +100,33 @@ export const NavBar = () => {
                   height={1500}
                   width={1500}
                   src="/logo/logo_fav001.png"
-                  className="h-[4.5rem] w-auto"
+                  className="h-[4.5rem] sm:h-[5rem] w-auto"
                 />
               </Link>
-              <h1 className="text-red-500 sm:block hidden text-2xl">
-                zembelani_logo
-              </h1>
             </div>
 
             <div className="ml-auto mr-4 flex items-center">
               <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
-                <Link
-                  href="/profile"
-                  className="text-md font-semibold text-black"
-                >
-                  Profile
-                </Link>
-              </div>
+                <div className="flex items-center space-x-4">
+                  <RxMagnifyingGlass
+                    onClick={handleSearchToggle}
+                    className=" text-[#001A4B] size-7 cursor-pointer"
+                  />
 
-              <div className="flex items-center space-x-4">
+                </div>
+                <span aria-hidden="true" className="h-6 w-px bg-gray-400" />
+
+                {NavStatic.map((item, name) => (
+                  <Link
+                    key={name}
+                    href={item.href}
+                    className="hover:border-b-1 border-red-700 font-semibold text-[#001A4B]"
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
+              <div className="flex sm:hidden items-center space-x-4">
                 <RxMagnifyingGlass
                   onClick={handleSearchToggle}
                   className=" text-blue-900 size-7 cursor-pointer"
