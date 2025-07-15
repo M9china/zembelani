@@ -40,8 +40,8 @@ export const Hero = () => {
               const isLeftText = value.id % 2 !== 0;
 
               const backgroundColor = isLeftText
-                ? "#001A4B" // left-aligned background
-                : "#9b0000"; // right-aligned background
+                ? "#001A4B"
+                : "#9b0000";
 
               return (
                 <div

@@ -17,7 +17,7 @@ export const About = () => {
             WHAT WE DO
           </h1>
           <section className=" flex space-x-4 px-4 items-center mt-5">
-            <div className="bg-[#e75152] sm:w-2 w-4 border border-[#e75152] sm:h-[5rem] h-[7.5rem]"></div>
+            <div className="bg-[#9b0000] sm:w-2 w-4 border border-[#9b0000] h-[7.5rem] "></div>
             <p className="text-gray-600 font-sans sm:text-2xl text-lg justify-items-center">
               {AboutUs.wwd}
             </p>
@@ -25,7 +25,6 @@ export const About = () => {
         </div>
       </div>
       <div className="relative sm:grid-cols-3 mt-8">
-        <Link href={"portfolio/0"}></Link>
         <Image
           className="rounded-xs px-4 w-full object-contain h-auto mt-4"
           alt="machinery"
@@ -33,17 +32,18 @@ export const About = () => {
           height={1080}
           src="/projects/plant.jpg"
         />
-        <div className="absolute sm:bottom-16 sm:px-16 bottom-4 px-4 ">
+        <div className="absolute sm:bottom-16 sm:px-16 bottom-8 px-4 ">
           <h1 className="text-white font-semibold sm:text-5xl text-3xl px-4">
             PLANT HIRE SERVICES
           </h1>
+          <Link href={'/catalogue'} className="mx-4 border-b-2 border-[#001A4B] pt-8">VIEW ALL EQUIPMENT</Link>
         </div>
       </div>
       <div className="bg-[#001A4B] sm:grid grid-cols-4 relative pt-[2rem] mt-[2rem]">
         {AboutUs.display.map((items: IAU) => (
           <div key={items.description} className="py-2 relative px-4">
             <Image
-              className="w-full sm:h-[36rem]  object-contain h-auto"
+              className="w-full sm:h-[36rem]  object-cover h-[20.5rem]"
               alt="machinery"
               width={1920}
               height={1080}

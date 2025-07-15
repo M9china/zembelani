@@ -40,7 +40,8 @@ export const OurProjects = () => {
           src={project.imageUrl[1] || "/projects/default.png"}
         />
         <div className="absolute sm:top- top-28 p-4 sm:px-[4rem] rounded sm:text-9xl w-1/2">
-          <h1 className="text-white leading-16 font-bold text-5xl">
+          {/* <h1 className=""> */}
+          <h1 className={` text-white leading-16 font-bold text-5xl px-4 transition-transform duration-1000 ease-in-out ${zoom ? "scale-x-50 scale-50" : "scale-100"}`}>
             {project.description}
           </h1>
           

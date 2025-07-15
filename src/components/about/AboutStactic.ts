@@ -18,7 +18,7 @@ export const AboutUs: IAbout = {
     },
         {
       image: '/projects/sand.jpg',
-      description: ` TRANSPORTATION SERVICES`,
+      description: ` 14m3 & 10m3 TIPPER TRUCKS`,
     },
     {
       image: '/projects/pump03.jpg',
