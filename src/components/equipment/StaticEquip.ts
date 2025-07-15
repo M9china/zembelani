@@ -7,7 +7,6 @@ export declare interface IEquip {
 export const StaticEquip: IEquip[] = [
     {image: '/services/phire.jpg', title: 'MOTOR GRADERS'},
     {image: '/services/roller.jpg', title: 'SMOOTH ROLLERS'},
-    {image: '/', title: 'VACUUM TANKERS'},
     {image: '/services/tipper.jpg', title: 'TIPPER TRUCKS'},
     {image: '/services/watercars.jpg', title: 'WATER CARS'},
     {image: '/services/excavator01.jpg', title: 'EXCAVATORS'},
