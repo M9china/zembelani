@@ -33,10 +33,10 @@ export const About = () => {
           src="/projects/plant.jpg"
         />
         <div className="absolute sm:bottom-16 sm:px-16 bottom-8 px-4 ">
-          <h1 className="text-white font-semibold sm:text-5xl text-3xl px-4">
+          <h1 className="text-white mb-8 font-semibold sm:text-5xl text-3xl px-4">
             PLANT HIRE SERVICES
           </h1>
-          <Link href={'/catalogue'} className="mx-4 border-b-2 border-[#001A4B] pt-8">VIEW ALL EQUIPMENT</Link>
+          <Link href={'/catalogue'} className="mx-4 text-white font-bold border-b-2 border-[#001A4B] pt-8">VIEW ALL EQUIPMENT</Link>
         </div>
       </div>
       <div className="bg-[#001A4B] sm:grid grid-cols-4 relative pt-[2rem] mt-[2rem]">
