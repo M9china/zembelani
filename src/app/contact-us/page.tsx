@@ -8,8 +8,9 @@ export default function ContactUsPage() {
       </h1>
       <div className="px-8 space-y-4">
         <p className="text-gray-900 text-lg">
-          For inquiries, please reach out to us via phone or visit our offices.<br/>
-           If you're unsure which address to use, feel free to contact our main office.
+          For inquiries, please visit our offices.<br/>
+          {`
+           If you're unsure which address to use, feel free to contact our main office.`}
         </p>
         <Link className="bg-[#001A4B] text-white px-4 py-2 rounded font-bold" href={"tel:+27 72 367 7794"}>CALL US NOW</Link>
       </div>
