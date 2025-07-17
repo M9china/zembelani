@@ -16,7 +16,7 @@ export default function ContactUsPage() {
       </div>
 
        <div className="mt-8 px-4 rounded-2xl border mx-4 bg-white">
-        <div className="text-gray-800 font-sans text-lg py-4">
+        <div className="text-gray-800 font-sans font-semibold text-lg py-4">
             <p>1751 SECTION A</p>
             <p>KWAGGAFONTEIN</p>
             <p>MPUMALANGA</p>
@@ -26,7 +26,7 @@ export default function ContactUsPage() {
       </div>
       
       <div className="mt-8 px-4 rounded-2xl border mx-4 bg-white">
-        <div className="text-gray-800 font-sans text-lg py-4">
+        <div className="text-gray-800 font-sans text-lg font-semibold py-4">
             <p>1091 TITBABBLAER STREET</p>
             <p>MONTANA TUINE</p>
             <p>PRETORIA</p>
