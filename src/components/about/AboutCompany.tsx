@@ -12,7 +12,7 @@ export const AboutCompany = () => {
         className="w-full brightness-65 h-[40rem] sm:h-[60rem] object-cover"
       />
       <div className="absolute top-[10rem]">
-        <h2 className="text-white font-semibold space-y-8 text-4xl px-8 sm:px-16 mt-4">
+        <h2 className="text-white leading-[5rem] font-semibold space-y-8 text-4xl px-8 sm:px-16 mt-4">
           ESTABLISHED
           <br /> 2005
           <br /> B-BBEE STATUS
