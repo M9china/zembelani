@@ -12,7 +12,7 @@ export const AboutCompany = () => {
         className="w-full brightness-65 h-[40rem] sm:h-[60rem] object-cover"
       />
       <div className="absolute top-[10rem]">
-        <h2 className="text-white leading-[5rem] font-semibold space-y-8 text-4xl px-8 sm:px-16 mt-4">
+        <h2 className="text-white leading-[5rem] sm:leading-[6.5rem] sm:text-7xl font-semibold space-y-8 text-4xl px-8 sm:px-16 mt-4">
           ESTABLISHED
           <br /> 2005
           <br /> B-BBEE STATUS
@@ -20,10 +20,10 @@ export const AboutCompany = () => {
           LEVEL 1<br />
         </h2>
       </div>
-      <div className="px-4 mt-[3rem]">
+      <div className="px-4 mt-[3rem] sm:grid grid-cols-2 gap-8 items-center">
         <div>
-            <h1 className="text-3xl text-[#001A4B] font-bold">OUR MISSION</h1>
-        <ul className="list-disc list-inside text-lg text-gray-800 mt-5 px-2">
+            <h1 className="text-3xl text-[#001A4B] font-bold sm:text-5xl">OUR MISSION</h1>
+        <ul className="list-disc list-inside text-lg sm:text-2xl sm:py-2 text-gray-800 mt-5 px-2">
           <li>
             To be the leading transport and construction company of the 21st
             century and beyond.
@@ -34,8 +34,8 @@ export const AboutCompany = () => {
         </ul>
         </div>
         <div>
-            <h1 className="text-3xl text-[#001A4B] font-bold mt-8">OUR VISSION</h1>
-            <ul className="list-disc list-inside text-lg text-gray-800 mt-5 px-2">
+            <h1 className="text-3xl text-[#001A4B] font-bold mt-8 sm:text-5xl">OUR VISSION</h1>
+            <ul className="list-disc list-inside text-lg sm:text-2xl sm:py-2 text-gray-800 mt-5 px-2">
                 <li>To deliver effective, efficient, and high-quality services that exceed client expectations.</li>
                 <li>To foster sustainable growth while upholding social and environmental responsibility in all our operations.</li>
                 <li>To continuously innovate and adopt industry-leading practices in transportation and construction to 
@@ -43,8 +43,9 @@ export const AboutCompany = () => {
             </ul>
 
         </div>
-        <OurClients/>
+        
       </div>
+      <OurClients/>
     </main>
   );
 };
