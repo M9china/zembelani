@@ -42,7 +42,7 @@ export const About = () => {
         {AboutUs.display.map((items: IAU) => (
           <div key={items.description} className="py-2 relative px-4">
             <Image
-              className="w-full sm:h-[36rem]  object-cover brightness-90 h-[20.5rem]"
+              className="w-full sm:h-[36rem]  object-cover brightness-75 h-[20.5rem]"
               alt="machinery"
               width={1920}
               height={1080}

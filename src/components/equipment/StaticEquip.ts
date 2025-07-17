@@ -12,7 +12,7 @@ export const StaticEquip: IEquip[] = [
     {image: '/services/excavator01.jpg', title: 'EXCAVATORS'},
     {image: '/services/tlb.jpg', title: 'TRACTOR LOADER BACKHOE'},
     {image: '/services/waste.jpg', title: 'WAISTE COMPACTORS'},
-     {image: '/services/watercars.jpg', title: 'WATER CARS'},
+     {image: '/services/watercars.jpg', title: 'WATER TRUCKS'},
 
 ]
 

@@ -20,10 +20,10 @@ export const Equipment = () => {
 
       <div className="mt-[3rem] sm:grid grid-cols-4 gap-4">
         {StaticEquip.map((item) => (
-          <div key={item.title} className="relative ">
+          <div key={item.title} className="relative rounded">
             <Image src={item.image} alt={"product image"}
              width={500} height={500}
-             className=" pb-10 object-cover brightness-70 h-[20rem] rounded" />
+             className="pb-10 object-cover brightness-70 h-[20rem] rounded" />
             <div className="absolute top-1/2">
                 <p className="text-2xl text-center px-8 text-white font-bold font-sans">{item.title}</p>
             </div>
