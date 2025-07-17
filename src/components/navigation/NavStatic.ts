@@ -17,4 +17,8 @@ export const NavStatic: INavStatic[] = [
   },
   {    title: "Contact Us",
     href: "/contact-us",
-    }]
+    },
+  {
+    title: "Our Fleet",
+    href: "/catalogue",
+  }]

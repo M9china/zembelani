@@ -16,10 +16,6 @@ export const AboutUs: IAbout = {
       image: "/projects/tar.jpg",
       description: `ROADS & EARTHWORKS`,
     },
-        {
-      image: '/projects/sand.jpg',
-      description: ` 14m3 & 10m3 TIPPER TRUCKS`,
-    },
     {
       image: '/projects/pump03.jpg',
       description: `PRESSURE-PUMPS INSTALLATION`,
