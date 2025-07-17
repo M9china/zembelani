@@ -16,9 +16,8 @@ export const About = () => {
           <h1 className="text-[#001A4B] px-4 font-semibold sm:text-5xl text-3xl sm:mt-0 mt-8">
             WHAT WE DO
           </h1>
-          <section className=" flex space-x-4 px-4 items-center mt-5">
-            <div className="bg-[#9b0000] sm:w-2 w-4 border border-[#9b0000] h-[7.5rem] "></div>
-            <p className="text-gray-600 font-sans sm:text-2xl text-lg justify-items-center">
+          <section className=" flex px-4 items-center mt-5">
+            <p className="text-gray-600 font-sans sm:text-2xl pl-8 border-l-4 border-[#9b0000] text-lg justify-items-center">
               {AboutUs.wwd}
             </p>
           </section>
