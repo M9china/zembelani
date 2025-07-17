@@ -23,7 +23,7 @@ export const AboutCompany = () => {
       <div className="px-4 mt-[3rem]">
         <div>
             <h1 className="text-3xl text-[#001A4B] font-bold">OUR MISSION</h1>
-        <ul className="list-disc list-inside text-lg text-gray-800 mt-5 space-y-1 px-2">
+        <ul className="list-disc list-inside text-lg text-gray-800 mt-5 px-2">
           <li>
             To be the leading transport and construction company of the 21st
             century and beyond.
@@ -35,7 +35,7 @@ export const AboutCompany = () => {
         </div>
         <div>
             <h1 className="text-3xl text-[#001A4B] font-bold mt-8">OUR VISSION</h1>
-            <ul className="list-disc list-inside text-lg text-gray-800 mt-5 space-y-1 px-2">
+            <ul className="list-disc list-inside text-lg text-gray-800 mt-5 px-2">
                 <li>To deliver effective, efficient, and high-quality services that exceed client expectations.</li>
                 <li>To foster sustainable growth while upholding social and environmental responsibility in all our operations.</li>
                 <li>To continuously innovate and adopt industry-leading practices in transportation and construction to 
