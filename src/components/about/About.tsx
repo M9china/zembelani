@@ -38,7 +38,7 @@ export const About = () => {
           <Link href={'/catalogue'} className="mx-4 text-white font-bold border-b-2 border-[#001A4B] pt-8">VIEW ALL EQUIPMENT</Link>
         </div>
       </div>
-      <div className="bg-[#001A4B] sm:grid grid-cols-4 relative pt-[2rem] mt-[2rem]">
+      <div className="bg-[#001A4B] sm:grid grid-cols-3 gap-8 relative pt-[2rem] mt-[2rem]">
         {AboutUs.display.map((items: IAU) => (
           <div key={items.description} className="py-2 relative px-4">
             <Image
