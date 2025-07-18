@@ -80,7 +80,7 @@ export const ProjectsStatic: Project[] = [
       optimal functionality for the intended industrial processes.`,},
     imageUrl: [
       "/projects/pump.jpg",
-      "/projects/pressure.png",
+      "/projects/ppump.jpg",
       "/projects/pump14.jpg",
       "/projects/pump12.jpg",
       "/projects/pump08.jpg",
